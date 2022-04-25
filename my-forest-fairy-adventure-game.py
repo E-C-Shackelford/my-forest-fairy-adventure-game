@@ -138,3 +138,34 @@ def right_path():
     print_pause("You saved the day and are now\n"
                 "a trusted friend of the forest fairies!")
     print_pause("Congrats, you won the game!")
+
+
+def play_again():
+    print_pause("Would you like to play the game again?", 1)
+    print_pause("Please enter whether or not you want to play again:")
+    play = valid_input("1. yes\n"
+                       "2. no\n", ["1", "2"])
+    if play == '1':
+        print_pause("Wonderful, it's time to play again!")
+        villan_choice = ["troll", "werewolf", "goblin", "orc"]
+        global villan
+        villan = random.choice(villan_choice)
+        intro()
+        path_choice()
+        play_again()
+
+    elif play == '2':
+        print_pause("Farewell for now, it's time to exit the game!")
+        exit(0)
+
+
+def play_game():
+    villan_choice = ["troll", "werewolf", "goblin", "orc"]
+    global villan
+    villan = random.choice(villan_choice)
+    intro()
+    path_choice()
+    play_again()
+
+
+play_game()
