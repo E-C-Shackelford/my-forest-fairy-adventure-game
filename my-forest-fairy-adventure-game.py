@@ -1,6 +1,7 @@
 import time
 import random
 
+
 def print_pause(message, pause=2):
     print(message)
     time.sleep(pause)
