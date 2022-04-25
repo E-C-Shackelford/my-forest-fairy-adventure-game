@@ -122,3 +122,19 @@ def left_path():
                 print_pause("Even though you're missing the forest festival,\n"
                             "you returned the stone to the forest fairies\n"
                             "and so you still won the game!")
+
+
+def right_path():
+    print_pause("As you travel down the right path,\n"
+                "you encounter magical fairies\n"
+                "who love and celebrate stones.")
+    print_pause("They've lost one of their stones,\n"
+                "so you show them the stone you found.")
+    print_pause("The fairies are overjoyed!", 3)
+    print_pause("Because you found their stone\n"
+                "and returned it,\n"
+                "the fairies want to teach you about its healing properties\n"
+                "and want you to keep the stone as a gift!")
+    print_pause("You saved the day and are now\n"
+                "a trusted friend of the forest fairies!")
+    print_pause("Congrats, you won the game!")
